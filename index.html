@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bijouterie Ora</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h3>Bijouterie-Ora</h3>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Boutique</a></li>
+               
+            </ul>
+            <hr>
+            <button>contactez-nous </button>
+        </nav>
+        <div class="content">
+          <img src="img/boucle.jpg" class="connect">  
+        </div>
+        <div class="text">
+            <h3>Lampe</h3>
+            <h3>is the <br>ART</h3>
+            <p>For the power of light</p>
+        </div>
+        <div class="social">
+            <a href="#">TIKTOK</a>
+            <a href="#">META</a>
+            <a href="https://www.instagram.com/bijouterie_ora/?hl=fr">INSTAGRAM</a>
+        </div>
+        <div class="perfumes">
+            <img src="img/bague.jpg"onclick="active('img/bague.jpg')">
+            <img src="img/bracelet.jpg"onclick="active('img/bracelet.jpg')">
+            <img src="img/chaine.jpg" onclick="active('img/chaine.jpg')">
+            <img src="img/rolex.jpg"onclick="active('img/rolex.jpg')" >
+        </div>
+    </div>
+    <script>
+        function active(sbj){
+            document.querySelector('.connect').src=(sbj);
+        }
+    </script>
+</body>
+</html>
